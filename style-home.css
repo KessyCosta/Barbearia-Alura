@@ -1,0 +1,53 @@
+/* tudo colocado aqui será inserido automaticamente em todo o texto.*/
+
+/* tag, identificador*/
+#banner {
+    width: 100%; /*largura*/
+}
+
+/*classe*/
+.principal {
+    background: #CCCCCC; /*plano de fundo*/
+    padding: 30px; /*padding é espaçamento interno */
+}
+
+.titulo-principal {
+    padding-left: 20px;
+}
+
+.titulo-centralizado {
+    text-align:center; /*alinhamento de texto*/
+}
+
+p {
+    text-align: center;
+    
+}
+
+#missao {
+   font-size:20px; /*tamanho de fonte*/
+   text-align:center
+}
+/* strong faz referência ao negrito lá do html e todo strong dentro de em vai ficar em vermelho*/
+em strong {
+    color: #FF0000;
+}
+/* ponto e palavra é para classes*/
+.itens {
+   font-style: italic; 
+}
+
+.beneficios {
+    background: #FFFFFF;
+    padding: 20px
+}
+
+ul {
+    display: inline-block; /*como o elemento aparece visualmente*/
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%
+}
+.imagembeneficios {
+    width: 50%
+}

@@ -1,0 +1,268 @@
+body { /*fonte copiada do google fontes*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background: #BBBBBB;
+    padding: 20px 0;
+}
+
+.caixa { 
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+nav {
+    position: absolute; /*absolute serve para mudar a posição do ponto inicial do elemento*/
+    top: 110px;
+    right: 0;
+}
+
+nav li { /*aqui é o item em si*/
+    display: inline;
+    margin: 0 0 0 15px; /*para dar espaço entre as palavras do menu*/
+}
+
+nav a { /*aqui é o link do menu de navegação*/
+    text-transform: uppercase; /*transforma tudo em maiusculo*/
+    color: #000000;
+    font-weight: bold; /*Peso da fonte, se negrito etc*/
+    font-size: 22px; /*tamanho da fonte*/
+    text-decoration: none; /*para tirar o sublinhado dos links*/
+
+}
+
+nav a:hover { /*quando o mouse estiver em cima dos links do menu de navegação*/
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.produtos {
+    width: 940px;
+    margin:0 auto;
+    padding: 50px 0;
+}
+
+.produtos li {
+    display: inline-block; /*para ficar um ao lado do outro*/
+    text-align: center; /*o texto fica alinhado com a respectiva imagem*/
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000; /*borda (tamanho, tipo e cor)*/
+    border-radius: 10px; /*para arredondar as quinas das bordas*/
+}
+
+.produtos li:hover {
+    border-color: #C78C19;
+}
+
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+
+.produtos li:active {
+    border-color: #088C19;
+
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.produto-descricao {
+    font-size: 18px;
+    font-weight: bold;
+}
+.produto-preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer { /*rodapé*/
+    text-align: center;
+    background: url("bg.jpg"); /*para adicionar imagem de fundo*/
+    padding: 40px 0;
+}
+
+ .copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0; /*colocar espaço entre ele e a imagem*/
+ }
+
+form {
+    margin: 40px 0;
+ }
+
+ form label, form legend { /*form p é para que a frase de p seja do mesmo tamanho que o texto de emauil, tel e etc abaixo*/
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+ }
+
+.input-padrao { 
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+ }
+
+ .checkbox {
+    margin: 20px 0;
+ }
+
+.enviar {
+    width: 40%;
+    padding: 15px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px; /*arredondar a borda do botão*/
+    transition: 1s all; /*demora 1segundo para fazer a transição de cor quando passa o mouse*/
+    cursor: pointer; /*para aparecer a mãozinha em cima do botão quando coloca o mouse*/
+ }
+
+.enviar:hover { /*quando o mouse está por cima*/
+    background: darkorange;
+    transform: scale(1.2); /*aumenta aqui em 20% ao passar o mouse sobre o botão de enviar formulário*/
+ }
+
+ table {
+    margin: 20px 0 40px;
+ }
+
+ thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+ }
+
+ td, th {
+    border: 1px solid #000000; /*criar tabela visual com borda*/
+    padding: 8px 15px; /*inserir espaçamento interno na tabela*/
+ }
+
+ /*css da página inicial*/
+ .banner {
+    width: 100%;
+ }
+
+ .titulo-principal {
+    text-align: center;
+    font-size: 2em; /*o dobro do tamanho principal*/
+    margin: 0 0 1em;
+    clear: left; /*limpa o float colocado na imagem dos utensílios da barbearia para que o título desca e não fique na mesma linha da imagem, coloc left pq foi o que coloquei em float lá em .utensilios*/
+ }
+
+.principal {
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 940px;
+    margin: 0 auto;
+ }
+
+.principal p {
+    margin: 0 0 1em;
+ }
+
+ .principal strong {
+    font-weight: bold;
+ }
+
+ .principal em {
+    font-style: italic;
+ }
+
+.utensilios {
+    width: 120px; /*largura da imagem*/
+    float: left; /*O float faz com que o texto fique ao redor da imagem*/
+    margin: 0 20px 20px 0; /*margem de espaçamento.cima, direita, baixo, esquerda*/
+}
+
+.mapa {
+    padding: 3em 0; /*espaçamento interno*/
+    background: linear-gradient(#FEFEFE,#888888); /*aqui faz automaticamente a transição de uma cor para outra*/
+}
+
+.mapa-conteudo {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mapa p {
+    margin: 0 0 2em; /*espaçamento externo*/
+    text-align: center;
+ }
+
+.beneficios {
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios {
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens {
+    line-height: 1.5;
+}
+
+.itens:first-child {  /*utiliza esse para negritar apenas 1 item de uma lista*/
+  font-weight: bold;  
+
+}
+
+.itens:before {
+    content: "✭";
+    font-weight: bold;
+}
+
+.imagem-beneficios {
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow: 10px 10px 10px #000000;
+ }
+
+.imagem-beneficios:hover {
+    opacity: 0.3;
+}
+
+.video {
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) { /* adaptando o conteúdo para funcionar em celular*/
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios {
+        width: 100%;
+    }
+}

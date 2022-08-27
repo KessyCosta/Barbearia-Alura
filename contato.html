@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head> <!--head são as informações que vou passar para meu navegador-->
+        <meta charset="UTF-8">
+        <title>Contato - Barbearia Alura</title>
+
+        <link rel="stylesheet" href="reset.css"> <!-- o arquivo reset limpa tudo que é feito. Foi colocado aqui pq primeiro limpa depois coloca nosso estilo-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> <!--São as informações que quero exibir na página-->
+        <header> <!--é o cabeçalho do conteúdo-->
+            <div class="caixa">
+                <h1><img src="logo.png"  alt="logo da barbearia Alura"></h1> <!--Imagem está dentro de h1 pq a logo que é uma imagem é a primeira coisa que quero exibir no meu site-->
+
+                <nav> <!--de navegaçãom, cria essa tag para usar direto no css essa tag-->
+                    <ul>
+                    <li><a href="index.html">Home</a></li> <!--a tag tag a de ancoragem <a href é para-fazer com que essa palavra vire link para outra página-->
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contatos.html">Contato</a></li>
+
+                </ul>
+
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <form> <!--Formulário-->
+                <label for="nomesobrenome">Nome e Sobrenome</label> <!--label e input andam juntos-->
+                <input type="text" id="nomesobrenome" class="input-padrao" required> <!--required significa obrigatório-->
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seudominio@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXX-XXXX">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem"></textarea class="input-padrao" required> <!--caixa de mensagem maior e o tamanho pode ser modificado-->
+
+                <fieldset> <!--um ou mais campos de um assunto específico, dados de um endereço por exemplo-->
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email">
+                    Email</label> <!--item de marcação de bolinha-->
+                    
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                    
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    
+                </fielset>
+                
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>   
+                </fielset>
+                
+
+                <label class="checkbox" ><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+                <input type="submit" value="Enviar formulário" class="enviar">
+            </form>
+
+            <table> <!--tabela-->
+              <thead>
+                <tr> <!--linhas-->
+                    <th>Dia</th> <!--célula-->
+                    <th>Horário</th>
+                </tr>
+             </thead>
+             <tbody>
+                <tr>
+                    <td>Segunda</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta</td>
+                    <td>8h ~ 20h</td>
+                </tr>
+             </tbody>
+                
+            </table>
+        </main>
+
+        <footer> <!--rodapé-->
+            <img src="logo-branco.png" alt="logo da barbearia Alura">
+            <p class="copyright">&copy; Copyright Barbearia Alura 2019</p>
+        </footer>
+    </body>
+</html>
